@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel, Tesoura</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div id="telaInicial">
+        <h1>Pedra, Papel e Tesoura</h1>
+
+        <label>Defina a quantidade de rodadas:</label>
+        <input type="text" id="rodadas">
+
+        <button onclick="iniciarJogo()">Iniciar esse jogo</button>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <div id="telaJogo" style="display:none;">
+        <h2>Escolha uma opção</h2>
+
+        <button onclick="jogar('Pedra')">Pedra</button>
+        <button onclick="jogar('Papel')">Papel</button>
+        <button onclick="jogar('Tesoura')">Tesoura</button>
+
+        <p id="resultado"></p>
+        <p id="placar"></p>
+        <p id="recorde"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
